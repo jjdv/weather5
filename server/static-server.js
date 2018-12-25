@@ -21,6 +21,7 @@ app.get('*', (req, res) => {
   }
 });
 
-app.listen(serverConfig.port, serverConfig.hostname, () => {
-  console.log(`Server running at http://${serverConfig.hostname}:${serverConfig.port}/`);
+const PORT = process.env.PORT || serverConfig.port;
+app.listen(PORT, () => {
+  console.log(`Server listening on port: ${serverConfig.port}...`);
 });

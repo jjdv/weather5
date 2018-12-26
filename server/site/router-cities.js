@@ -1,19 +1,10 @@
 const fs = require('fs')
 
-let cityList = []
+let cityList = [], cityListCompare = []
 fs.readFile(__dirname + '/data/cities.GB-US-IE-PL.json', 'utf8', (err, data) => {
     if (err) return console.error(err)
 
-    const cityListTemp = JSON.parse(data)
-    cityList = cityListTemp.map(
-        city => ({
-            name: `${city.name}, ${city.country}    (Lt: ${Number.parseFloat(city.coord.lat).toFixed(1)}, Lg: ${Number.parseFloat(city.coord.lon).toFixed(1)})`,
-            id: city.id
-        })
-    )
-    cityList.sort((a, b) => (
-        a.name < b.name ? -1 : (a.name > b.name ? 1 : 0)
-    ))
+    cityList = JSON.parse(data)
     cityListCompare = cityList.map(city => city.name.toLowerCase())
 })
 

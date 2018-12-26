@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 let cityList = []
-fs.readFile(__dirname + '/data/city.list.json', 'utf8', (err, data) => {
+fs.readFile(__dirname + '/data/cities.GB-US-IE-PL.json', 'utf8', (err, data) => {
     if (err) return console.error(err)
 
     const cityListTemp = JSON.parse(data)

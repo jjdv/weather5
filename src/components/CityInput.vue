@@ -19,7 +19,6 @@
 
 <script>
 import {xhRequest} from '../modules/helpers.js'
-import siteConfig from '../../server/site/site.config.js'
 
 export default {
     data () {
@@ -42,7 +41,7 @@ export default {
     methods: {
         cityList (v) {
             this.loading = true
-            const url = `${location.protocol}//${location.hostname}:${siteConfig.port}/api/cities?startStr=${v}`
+            const url = `${location.origin}/api/cities?startStr=${v}`
 
             xhRequest(url, 'GET')
             .then(data => {

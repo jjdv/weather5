@@ -63,7 +63,7 @@ Here are the features which hasn't been implemented due to some limitations:
 - The available cities are limited to four countries: UK, USA, Ireland and Poland. The free version of the internet server used had some problems with processing the original file so I decreased its size by limiting cities available for selection.
 
 ### Possible improvements
-As usuall, there are endless possibilities to improve the app ;) so I focus here on the key ones:
+As usual, there are endless possibilities to improve the app ;) so I focus here on the key ones:
 - The regular weather API provides data for tons of cities. Very often there are at least a few cities available on the list with the same city name (you don't see it due to cities limited to 4 countries). Ideally the app should use the geographic coordinates provided in the city list to display available cities on a map and allow user to choose a city from the map.
 - The app could somehow get the info about sunrise and sunset times for a given day and reflect it in the icon background/tone diplayed for a given time. Maybe even decoding the icon code provided by the API (d/n) would suffice.
 - the city list, provided by the regular API, needs some sanity check ;)

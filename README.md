@@ -2,7 +2,7 @@
 
 ## Overview
 This project was built to play with the [Openweather API](https://openweathermap.org/forecast5). The 5 day weather forecast data was used.   
-The main technologies used are Vue.js/Vuex/Vue router with Vuetify on the front-end and Node/Express on the backend.
+The main technologies used are Vue.js/Vuex/Vue router with Vuetify on the front-end and Node/Express on the backend.   
 You can play with the working app under <http://weather5.appspot.com>
 
 ## Project setup

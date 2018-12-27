@@ -1,5 +1,5 @@
 <template>
-    <v-card min-width="300px" color="orange lighten-5" class="px-4 py-2 grow">
+    <v-card min-width="350px" color="orange lighten-5" class="px-3 py-2 grow">
         <table class="main">
             <tr v-for="day in forecast" :key="day.date" class="row">
                 <td class="data">
@@ -44,30 +44,29 @@ export default {
 
 <style lang="less" scoped>
 table {
-    table-layout: auto;
     border-collapse: collapse;
     font-size: 14px;
     &.main {width: 100%;}
     tr.row + tr.row {border-top: 1px solid #ccc}
     td {
         text-align: center;
-        &.data {width: 22em;}
-        &.icon img {
-            height: 70px;
-            margin: 1em;
+        td span {
+            margin-left: 0.8em;
+            &:first-child {margin-left: 1.5em;}
+        }
+        &.icon {
+            width: 7em;
+            img {max-width: 5em;}
         }
     }
     table {
+        margin: 0.5em 0;
         td {
-            padding: 0 1em;
             &:first-child {text-align: left;}
-            &.day {width: 8em;}
-            &.temp {width: 6em;}
-            &.wind {width: 7em;}
             p {
                 margin: 0;
                 &.weekDay {
-                    font-size: 16px;
+                    font-size: 15px;
                     font-weight: bolder;
                 }
                 &.date {font-size: 12px;}
@@ -77,7 +76,6 @@ table {
                 color: red;
             }
             span.wind-direction {display: inline-block;}
-            span + span {margin-left: 1em;}
         }
     }
 }

@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style>
-.main-panel {min-width: 450px;}
+.main-panel {min-width: 350px;}
 
 .city-input {width: calc(100% - 100px);}
 </style>

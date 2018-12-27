@@ -28,7 +28,6 @@ export default {
 <style scoped>
 table {
     width: 100%;
-    table-layout: auto;
     border-collapse: collapse;
 }
 .hour {

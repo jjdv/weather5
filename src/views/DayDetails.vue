@@ -1,5 +1,5 @@
 <template>
-    <v-card min-width="300px" color="orange lighten-5" class="px-4 py-2 grow">
+    <v-card min-width="350px" color="orange lighten-5" class="px-3 py-2 grow">
         <v-layout column align-center>
             <img
                 v-if="dayForecast.icon"
@@ -49,7 +49,7 @@ export default {
 
 <style scoped>
 img.main-image {width: 30%;}
-.day-forecast, .hour-forecast {margin-top: 1em;}
+.day-forecast, .hour-forecast {margin-top: 1.5em;}
 .weekDay {
     font-size: 16px;
     font-weight: bolder;
@@ -58,4 +58,5 @@ span.date {
     font-size: 12px;
     margin-left: 2em;
 }
+td + td {margin-left: 1.5em;}
 </style>

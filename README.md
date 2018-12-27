@@ -53,7 +53,7 @@ The API features and limitations, the app goals and the time devoted for the app
 - two main forecast views:
     - 5-day forecast overview and
     - a detailed forecast for a given day
-- responsive design (which is a must nowadays anyway) with the views available statically for wider screens and dynamically (with a drawer) for smaller devices.
+- responsive design (which is a must nowadays anyway) with the views menu available statically for wider screens and dynamically (with a drawer) for smaller devices.
 - setup of the app (units and city) displayed at the start for new users and retrived automatically (from localStore) for the users coming back
 - a dedicated server/api to deliver a list of cities which match the selected city fragment. This is used to enable selection of the city from a city list and, at the same time, avoid loading to the browser the city list file (28MB) available from the regular API.
 

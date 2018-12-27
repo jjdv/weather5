@@ -69,5 +69,5 @@ As usual, there are endless possibilities to improve the app ;) so I focus here 
 - the city list, provided by the regular API, needs some sanity check ;)
 - the code could be further optimized to decrease the size of the app files. I mean the icon font file which could be build to include only used icons.
 - the app could be implemented as PWA although it would only improve the convenience to run the app. Besides that, this is not a big improvement for the app which needs to fetch the forecast data each time it is used.
-- an UX/UI designers could certainly help to give the app great final touch
+- UX/UI designers could certainly help to give the app a better final touch
 

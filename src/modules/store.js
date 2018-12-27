@@ -57,7 +57,7 @@ export default new Vuex.Store({
       if (!state.cityId || !state.units) return
 
       const conf = `mode=json&APPID=${APPID}`
-      const url = `http://api.openweathermap.org/data/2.5/forecast?id=${state.cityId}&units=${state.units}&${conf}`
+      const url = `${location.protocol}//api.openweathermap.org/data/2.5/forecast?id=${state.cityId}&units=${state.units}&${conf}`
       xhRequest(url, 'GET')
       .then(apiData => {
         const forecastData = weatherForecast(state, apiData)

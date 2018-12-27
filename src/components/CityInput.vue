@@ -50,12 +50,9 @@ export default {
             })
             .catch(errorMsg => {
                 this.loading = false
-                alert(errorMsg)
+                alert('Problem with city list download occured.\n' + errorMsg)
             })
         }
-    },
-    created: function () {
-        this.search = this.cityData.name
     }
 }
 </script>

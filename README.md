@@ -46,7 +46,7 @@ Since I had a freedom in choosing technology I used my favourite (i.e. considere
 There were three main goals in mind when choosing app solutions:
 1. Functionality, i.e. delivery to user all usefull info available from the API
 2. User experience. This means for me mainly a clear user interface with a natural, convenient navigation, at a good aesthetic level.
-3. App load time, which translates into a lightweight solutions the limited number of server calls. (It's also an element of the user experience but worth of a dedicated attention.)
+3. App load time, which translates into a lightweight solutions with limited number of server calls. (It's also an element of the user experience but worth of a dedicated attention.)
  
 #### Solution
 The API features and limitations, the app goals and the time devoted for the app resulted in the following solution elements:
@@ -67,6 +67,7 @@ As usuall, there a endless possibilities to improve the app ;) so I focus here o
 - The regular weather API provides data for tons of cities. Very often there are at least a few cities available on the list with the same city name (you don't see it due to cities limited to 4 countries). Ideally the app should use the geographic coordinates provided in the city list to display available cities on a map and allow user to choose a city from the map.
 - The app could somehow get the info about sunrise and sunset times for a given day and reflect it in the icon background/tone diplayed for a given time. Maybe even decoding the icon code provided by the API (d/n) would suffice.
 - the city list, provided by the regular API, needs some sanity check ;)
+- the code could be further optimized to decrease the size of the app files. I mean the icon font file which could be build to include only used icons.
 - the app could be implemented as PWA although it would only improve the convenience to run the app. Besides that, this is not a big improvement for the app which needs to fetch the forecast data each time it is used.
 - an UX/UI designers could certainly help to give the app great final touch
 

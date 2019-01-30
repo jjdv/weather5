@@ -1,9 +1,8 @@
 # Weather5 Project
+You can play with the working app under <http://weather5.appspot.com>.
 
 ## Overview
-This project was built to play with the [Openweather API](https://openweathermap.org/forecast5). The 5 day weather forecast data was used.   
-The main technologies used are Vue.js/Vuex/Vue router with Vuetify on the front-end and Node/Express on the backend.   
-You can play with the working app under <http://weather5.appspot.com>.
+This project was built to play with  Vue.js, Vuex, Vue Router and Vuetify on the front-end side and Node,js/Express in the backend. The [Openweather API](https://openweathermap.org/forecast5) was uses as the source of data with the 5 day weather forecast feed.
 
 ## Project setup
 Assuming you have [Node.js](https://nodejs.org/en/) installed, which includes npm, please copy this repository to a local project folder. Start a terminal, change the working directory to the project folder and run:

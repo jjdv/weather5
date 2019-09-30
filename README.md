@@ -1,5 +1,4 @@
 # Weather5 Project
-You can play with the working app under <https://weather5.appspot.com>.
 
 ## Overview
 This project was built to play with  Vue.js, Vuex, Vue Router and Vuetify on the front-end side and Node,js/Express in the backend. The [Openweather API](https://openweathermap.org/forecast5) was uses as the source of data with the 5 day weather forecast feed.
@@ -32,7 +31,6 @@ To play with the production version locally, start the static server with the co
 node server\static-server.js
 ```
 and view the app under `http://localhost:3000` with your browser.   
-The same production version is available at <https://weather5.appspot.com>.
 
 ## Comments
 
